@@ -81,7 +81,7 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
   color: #c9184a;
   font-family: 'Dancing Script', cursive;
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -150,7 +150,7 @@ body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.25);
   color: #333;
   font-family: 'Dancing Script', cursive;
-  font-size: 35px;
+  font-size: 45px;
   line-height: 1.8;
   text-align: left;
   transition: transform 1s ease, opacity 1s ease;
@@ -166,7 +166,7 @@ body {
 .full-letter h2 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 45px;
 }
 
 .full-letter p {
@@ -200,40 +200,44 @@ body {
   background: #b38f5c;
 }
 
-
 @media (max-width: 768px) {
+
   .card-container {
-    width: 90%;
-    max-width: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
   }
 
   .envelope {
-    height: calc(220 / 350 * 90vw);
+    width: 95vw;              /* MUCH bigger */
+    max-width: 500px;         /* prevents it from being too huge */
+    height: calc(220 / 350 * 95vw); /* keeps original ratio */
   }
 
   .envelope-icon {
-    font-size: 10vw;
-    width: 12vw;
-    height: 12vw;
+    font-size: 12vw;
+    width: 14vw;
+    height: 14vw;
   }
 
   .letter-preview {
-    font-size: 5vw;
-    padding: 5%;
+    font-size: 6vw;
+    padding: 6%;
   }
 
   .full-letter {
-    width: 90%;
-    padding: 5%;
-    font-size: 35px;
+    width: 92%;
+    padding: 6%;
+    font-size: 6vw;
     max-height: 90vh;
   }
 
   .full-letter h2 {
-    font-size: 6vw;
+    font-size: 7vw;
   }
 
   .full-letter .from {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 }
