@@ -177,7 +177,7 @@ body {
   display: block;
   margin-top: 1em;
   font-weight: bold;
-  font-size: 33px;
+  font-size: 40px;
   text-align: right;
 }
 
@@ -223,7 +223,7 @@ body {
 
   .letter-preview {
     font-size: 6vw;
-    padding: 6%;
+    padding: 10%;
   }
 
   .full-letter {
@@ -238,6 +238,6 @@ body {
   }
 
   .full-letter .from {
-    font-size: 6vw;
+    font-size: 40px;
   }
 }
