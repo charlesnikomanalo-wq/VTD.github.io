@@ -21,10 +21,10 @@ body {
 
 .card-container {
   position: relative;
-  width: 350px;  /* desktop default */
+  width: 350px;  
 }
 
-/* ENVELOPE */
+
 .envelope {
   position: relative;
   width: 350px;  
@@ -35,7 +35,7 @@ body {
   cursor: pointer;
 }
 
-/* FLAP */
+
 .flap {
   position: absolute;
   top: 0;
@@ -49,7 +49,7 @@ body {
   z-index: 2;
 }
 
-/* WAX SEAL */
+
 .envelope-icon {
   position: absolute;
   bottom: 10px;
@@ -69,7 +69,6 @@ body {
   transition: opacity 0.5s ease;
 }
 
-/* LETTER PREVIEW */
 .letter-preview {
   position: absolute;
   top: 0;
@@ -91,17 +90,16 @@ body {
   line-height: 1.5;
   opacity: 0;
   z-index: 1;
-  transform: translateY(100%); /* start below envelope */
+  transform: translateY(100%); 
   transition: opacity 0.5s ease;
 }
 
-/* SHOW LETTER PREVIEW ON CLICK WITH BOUNCE */
 .envelope.peek .letter-preview {
   opacity: 1;
-  animation: bounceUp 1.2s cubic-bezier(.28,.84,.42,1) forwards; /* slow and smooth */
+  animation: bounceUp 1.2s cubic-bezier(.28,.84,.42,1) forwards; 
 }
 
-/* BOUNCE ANIMATION KEYFRAMES */
+
 @keyframes bounceUp {
   0% {
     transform: translateY(100%);
@@ -123,28 +121,25 @@ body {
   font-size: 23px;
 }
 
-/* OPEN FLAP */
 .envelope.open .flap {
   transform: rotateX(180deg);
 }
 
-/* SHOW LETTER PREVIEW */
 .envelope.peek .letter-preview {
   bottom: 20px;
   opacity: 1;
 }
 
-/* HIDE SEAL WHEN OPEN */
 .envelope.peek .envelope-icon {
   opacity: 0;
 }
 
-/* FULL LETTER */
+
 .full-letter {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 900px;       /* desktop size */
+  width: 900px; 
   max-width: 900px;
   max-height: 80vh;
   overflow-y: auto;
@@ -186,7 +181,7 @@ body {
   text-align: right;
 }
 
-/* CUSTOM SCROLLBAR */
+
 .full-letter::-webkit-scrollbar {
   width: 8px;
 }
@@ -205,15 +200,15 @@ body {
   background: #b38f5c;
 }
 
-/* RESPONSIVE FOR MOBILE */
+
 @media (max-width: 768px) {
   .card-container {
-    width: 90%; /* scale down envelope */
+    width: 90%;
     max-width: none;
   }
 
   .envelope {
-    height: calc(220 / 350 * 90vw); /* keep aspect ratio */
+    height: calc(220 / 350 * 90vw);
   }
 
   .envelope-icon {

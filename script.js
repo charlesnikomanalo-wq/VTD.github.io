@@ -2,7 +2,7 @@ const envelope = document.getElementById("envelope");
 const letterPreview = document.getElementById("letterPreview");
 const fullLetter = document.getElementById("fullLetter");
 
-let state = 0; // 0 = closed, 1 = preview, 2 = full letter
+let state = 0; 
 
 envelope.addEventListener("click", () => {
   if (state === 0) {
