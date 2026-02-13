@@ -81,7 +81,7 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
   color: #c9184a;
   font-family: 'Dancing Script', cursive;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -150,7 +150,7 @@ body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.25);
   color: #333;
   font-family: 'Dancing Script', cursive;
-  font-size: 33px;
+  font-size: 35px;
   line-height: 1.8;
   text-align: left;
   transition: transform 1s ease, opacity 1s ease;
@@ -225,7 +225,7 @@ body {
   .full-letter {
     width: 90%;
     padding: 5%;
-    font-size: 4.5vw;
+    font-size: 35px;
     max-height: 90vh;
   }
 
